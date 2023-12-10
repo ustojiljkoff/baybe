@@ -108,7 +108,13 @@ The available groups are:
 - `simulation`: Enabling the [simulation](https://emdgroup.github.io/baybe/_autosummary/baybe.simulation.html) module.
 - `test`: Required for running the tests.
 - `dev`: All of the above plus `tox` and `pip-audit`. For code contributors.
-
+  
+### BayBE with a venv, full code
+```bash
+conda create --name baybe_venv python 3.11
+conda activate baybe_venv
+pip install baybe[chem,docs,examples,lint,mypy,onnx,simulation,test]
+```
 
 ## Quick Start
 
