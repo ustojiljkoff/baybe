@@ -5,12 +5,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Target enums 
+- `mypy` for targets package
+
+### Changed
+- Renamed `bounds_transform_func` target attribute to `transformation`
+- Moved and renamed target transform utility functions
+
 ### Removed
 - Conda install instructions and version badge
 
 ## [0.7.1] - 2023-12-07
 ### Added
 - Release pipeline now also publishes source distributions
+- `hypothesis` strategies and tests for parameters package
+
+### Changed
+- Reworked validation tests for parameters package
+- `SubstanceParameter` now collects inconsistent user input in an `ExceptionGroup`
 
 ### Fixed
 - Link handling in documentation
