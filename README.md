@@ -111,7 +111,7 @@ The available groups are:
   
 ### BayBE with a venv, full code
 ```bash
-conda create --name baybe_venv python 3.11
+conda create --name baybe_venv python=3.11
 conda activate baybe_venv
 pip install baybe[chem,docs,examples,lint,mypy,onnx,simulation,test]
 ```
